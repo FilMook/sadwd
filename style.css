@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0; /* สีพื้นหลังเพื่อให้ดูสะอาด */
+}
+
+#Board {
+    border-bottom: 20px solid rgb(0, 109, 24);
+    background-image: url(https://kawaiihoshi.com/wp-content/uploads/2022/08/sanrio-hello-kitty-tulips-wallpaper-scaled.jpeg);
+    background-size: cover; /* ปรับขนาด background ให้เต็มพื้นที่ */
+    border-left: 5px solid rgb(0, 0, 0);
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+}
+
+#RetryButton {
+    position: fixed;
+    bottom: 10%; /* ตั้งตำแหน่งให้ห่างจากด้านล่าง 10% */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff00bf; /* สีพื้นหลัง */
+    color: #fff; /* สีข้อความ */
+    border: none;
+    border-radius: 5px; /* ขอบมน */
+    cursor: pointer;
+    display: none; /* ซ่อนปุ่มโดยเริ่มต้น */
+}
+
+#RetryButton:hover {
+    background-color: #d32f2f; /* สีพื้นหลังเปลี่ยนเมื่อ hover */
+}
+
+.title {
+    font-size: 5vw; /* ใช้ vw เพื่อให้ขนาดตัวอักษรปรับตามขนาดหน้าจอ */
+    background-color: rgb(247, 131, 237);
+    border: black solid 2px;
+    margin-bottom: 20px;
+}
+
+.restart-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.restart-link:hover {
+    text-decoration: underline;
+}
